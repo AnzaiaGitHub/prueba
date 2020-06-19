@@ -1,0 +1,488 @@
+@import url('https://fonts.googleapis.com/css2?family=Odibee+Sans&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root{
+	font-size: 15px;
+	/*Paleta de colores*/
+	--myYellow:rgb(255,212,4);
+	--myDarkGreen:rgb(0,57,0);
+	--myBeige: rgb(255,230,105);
+	--myDarkBeige: rgb(205,180,55);
+	--myBlue:rgb(17,30,108);
+	--navbar:rgb(15,82,186);
+	--myRed:rgb(255,18,0);
+}
+
+header{
+	width: 100vw;
+	height: auto;
+	background: #bc4e9c;
+	background: -webkit-linear-gradient(to bottom, rgba(115,194,251,0.5),rgba(65,144,200,0.46)),URL("../img/FondoHistoria.jpg");
+	background: linear-gradient(to bottom, rgba(115,194,251,0.5),rgba(65,144,200,0.46)),URL("../img/FondoHistoria.jpg");
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	position: relative;
+}
+
+.titulomayor{
+	font-size: 4rem;
+	font-family: "Odibee Sans",sans-serif;
+	color: rgba(189,151,27,0.8);
+	text-shadow: 5px 5px 6px rgb(0,0,0);
+}
+
+.subtitulomayor{
+	font-size: 2rem;
+	font-family: "Odibee Sans",sans-serif;
+	color: rgba(0,0,55,1);
+}
+
+/*NAVBAR*/
+	/*Estilos Generales del Nav*/
+	nav {
+		display: flex;
+		justify-content: space-between;
+		width: 100vw;
+	}
+
+	nav ul{
+		list-style: none;
+		padding: 0;
+	}
+	nav li{
+		line-height: 3rem;
+		position: relative;
+		border-left: 0.2px solid black;
+	}
+	nav li ul{position: absolute;}
+	nav a{
+		text-decoration: none;
+		color:rgb(0,0,0);
+		font-weight: bold;
+		font-size: 1rem;
+		font-family: "Tenali Ramakrishna",sans-serif;
+		display: flex;
+		padding: 0 2.5rem;
+		transition: .3s;
+	}
+	nav a:hover{
+		background-color: var(--myDarkBeige);
+	}
+	nav > ul{
+		background-color: var(--myBeige);
+		display: table;
+		width: 100%;
+	}
+	nav > ul > li{float: right;}
+	nav li:hover >ul> li{
+		max-height: 500px;
+		overflow: visible;
+		border-bottom: 0.2px solid black;
+	}
+
+	/*Estilos 2nd level from Nav*/
+
+	nav li li{
+		background-color: var(--myBeige);
+		width: auto;
+		transition: all .5s;
+		max-height: 0;
+		overflow: hidden;
+	}
+	nav > ul > li > ul{top: 100%;}
+
+	/*Estilos 3rd level from nav*/
+
+	nav > ul > li > ul > li > ul{
+		right: 100%;
+		top: 0%;
+	}
+/*Fin Navbar*/
+/*________________________________________________________________________________________*/
+body{
+	background-color: var(--myBlue);
+}
+
+body::-webkit-scrollbar{
+	width: 0.5rem;
+	height: 0.5rem;
+}
+body::-webkit-scrollbar-track{
+	background-color: rgba(0,0,0,0.5);
+	border-radius: 0.5rem;
+}
+body::-webkit-scrollbar-thumb{
+	background-color: rgba(255,255,255,0.7);
+	border-radius: 0.5rem;
+}
+
+/*Calendario y Lista de Eventos*/
+.contenedorgeneral{
+	display: flex;
+	justify-content: space-between;
+	width: 90vw;
+	margin-left: 5vw;
+	margin-top: 10vh;
+	border:1px solid black;
+	overflow: hidden;
+}
+
+/*Decoración lateral con flor de lis y nudo ocho*/
+	.flordelis{
+		align-content: center;
+		height: auto;
+		padding: 10px;
+	}
+
+	.flor{
+		width: 5vw;
+		height: 5vw;
+	}
+
+	.nudo{
+		background-image: URL("../img/nudoochociclo.png");
+		width: 100%;
+		height: 100%;
+		background-size: 40%;
+		background-position: center;
+		background-position: top;
+		background-repeat: repeat-y;
+	}
+/*fin decoración*/
+
+.verticalcontainer{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	width: auto;
+	margin-top: 10vh;
+	border:1px solid black;
+	background-color: rgba(200,200,250,0.8);
+	border: none;
+	border-radius: 25px;
+	padding-bottom: 40px;
+	box-shadow: 0 0 6px black;
+}
+
+.presentacion{
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	height: auto;
+}
+
+.logosection{
+	width: 50%;
+	height: 100%;
+}
+
+.header_logo{
+	width: 400px;
+	height: 400px;
+	margin-left: 25%;
+}
+
+.basico{
+	display: flex;
+	flex-direction: column;	
+	width: 50%;
+	height: auto;
+	justify-content:center;
+	padding: 15px;
+}
+.basico p{
+	font-family: "Arial",sans-serif;
+	font-size: 1.5rem;
+	text-align: left;
+}
+.basico h2{
+	font-weight: bold;
+	font-size: 2rem;
+}
+
+/*titulo del body de la página*/
+.title{
+	font-family: "Odibee Sans",sans-serif;
+	color: white;
+	font-size: 6rem;
+	font-weight: bold;
+	padding: 10px 0;
+}
+
+/*Parrafos de la historia*/
+.historia{
+	font-family: "Tenali Ramakrishna",sans-serif;
+	color: rgb(52,52,52);
+	padding: 20px 35px;
+	width: 80%;
+}
+/*títulos en la  historia*/
+.historia h2{
+	font-family: "Odibee Sans", sans-serif;
+	text-align: center;
+	color: white;
+	font-size: 3rem;
+	padding: 20px 0 0 0;
+}
+/*subtítulos en la  historia*/
+.historia h3{
+	font-family: "Odibee Sans", sans-serif;
+	font-size: 2rem;
+	padding: 20px 0 0 0;
+}
+
+/*Párrafos en la historia*/
+.historia p{
+	font-weight: bold;
+	font-size: 1.4rem;
+	text-align: justify;
+	margin-top: 20px;
+}
+
+.imagen{
+	height: 40vh;
+	width: auto;
+}
+.button{
+	border: none;
+	border-radius: 5px;
+	font-size: 1rem;
+	padding: 5px;
+	background-color: var(--myDarkBeige);
+	box-shadow: 0 2px 6px black;
+	font-weight: bold;
+	cursor: pointer;
+	margin: 15px;
+}
+
+#scrolltop{
+	transition: all .5s;
+	opacity: 0;
+	position: fixed;
+	bottom: 15px;
+	right: 15px;
+	height: 50px;
+	width: 50px;
+	border: none;
+	border-radius: 50%;
+	font-size: 4rem;
+	font-weight: bold;
+	background-color: var(--myDarkBeige);
+	box-shadow: 0 2px 6px black;
+	cursor: pointer;
+	text-align: center;
+	overflow: hidden;
+}
+/*Footer*/
+	footer{
+		color: white;
+		background: linear-gradient(to bottom, rgba(50,50,50,0.5),rgba(25,25,25,0.5));
+		font-family: "Tenali Ramakrishna", sans-serif;
+		margin-top: 30px;
+	}
+	.containerfooter{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		width: 100vw;
+		height: 300px;
+	}
+
+	.redes{
+		display: flex;
+		align-items: center;
+	}
+
+	.redes div{
+		padding: 15px 15px;
+		text-align: center;
+		align-items: center;
+	}
+
+	.redes a{
+		text-decoration: none;
+		color: var(--myBeige);
+	}
+
+	.redes p{
+		padding-top: 15px;
+	}
+
+	/*Imágenes de redes sociales*/
+	.redsocial{
+		width: 6vw;
+		height: auto;
+		/*border-radius: 50%;*/
+		/*box-shadow: 0 0 10px black;*/
+	}
+
+	.contactenos{
+		display: flex;
+		justify-content: space-between;
+		border-bottom: 1px solid white;
+	}
+
+	.contact-info{
+		color:white;
+		text-align: center;
+		padding: 20px
+	}
+
+	.contact-info p{
+		text-align: center;
+		font-size: 1.5rem;
+	}
+
+
+	.contact-info h4{
+		border-bottom: 1px solid gray;
+		font-size: 2rem;
+		text-shadow: 1px 4px 5px black;
+	}
+
+	.autoria{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.autoria h3{
+		color: rgb(80,80,80);
+	}
+/*Fin Footer*/
+
+/*el responsive*/
+@media only screen and (max-width: 600px){
+	nav {
+		display: flex;
+		justify-content: space-between;
+		width: 100vw;
+	}
+
+	nav ul{
+		list-style: none;
+		padding: 0;
+	}
+	nav li{
+		line-height: 2.7rem;
+		position: relative;
+		border-left: 0.2px solid black;
+	}
+	nav li ul{position: absolute;}
+	nav a{
+		text-decoration: none;
+		color:rgb(0,0,0);
+		background-color: rgba(255,255,255,0.6);
+		font-weight: bold;
+		border-radius: 5px 5px 0 0;
+		font-size: 0.8rem;
+		font-family: "Tenali Ramakrishna",sans-serif;
+		display: flex;
+		padding: 0 1.7rem;
+		filter: grayscale(0%) opacity(0.7);
+		transition: .3s;
+	}
+	nav a:hover{
+		background-color: var(--myDarkBeige);
+	}
+	nav > ul{
+		background-color: var(--myBeige);
+		display: table;
+		width: 100%;
+	}
+	nav > ul > li{float: right;}
+	nav li:click >ul> li{
+		max-height: 500px;
+		overflow: visible;
+		border-bottom: 0.2px solid black;
+	}
+
+	/*Estilos 2nd level from Nav*/
+
+	nav li li{
+		background-color: var(--myDarkBeige);
+		width: auto;
+		transition: all .5s;
+		max-height: 0;
+		overflow: hidden;
+	}
+	nav > ul > li > ul{top: 100%;}
+
+	/*Estilos 3rd level from nav*/
+
+	nav > ul > li > ul > li > ul{
+		right: 100%;
+		top: 0%;
+}
+
+@media only screen and (max-width: 430px){
+	nav {
+		display: flex;
+		justify-content: space-between;
+		width: 100vw;
+	}
+
+	nav ul{
+		list-style: none;
+		padding: 0;
+	}
+	nav li{
+		line-height: 2.7rem;
+		position: relative;
+		border-left: 0.2px solid black;
+	}
+	nav li ul{position: absolute;}
+	nav a{
+		text-decoration: none;
+		color:rgb(0,0,0);
+		background-color: rgba(255,255,255,0.6);
+		font-weight: bold;
+		border-radius: 5px 5px 0 0;
+		font-size: 0.7rem;
+		font-family: "Tenali Ramakrishna",sans-serif;
+		display: flex;
+		padding: 0 1.5rem;
+		transition: .3s;
+	}
+	nav a:hover{
+		background-color: var(--myDarkBeige)
+	}
+	nav > ul{
+		background-color: var(--myBeige);
+		display: table;
+		width: 100%;
+	}
+	nav > ul > li{float: right;}
+	nav li:click >ul> li{
+		max-height: 500px;
+		overflow: visible;
+		border-bottom: 0.2px solid black;
+		background-color: var(--myDarkBeige);
+	}
+
+	/*Estilos 2nd level from Nav*/
+
+	nav li li{
+		background-color: var(--myBeige);
+		width: auto;
+		transition: all .5s;
+		max-height: 0;
+		overflow: hidden;
+	}
+	nav > ul > li > ul{top: 100%;}
+
+	/*Estilos 3rd level from nav*/
+
+	nav > ul > li > ul > li > ul{
+		right: 100%;
+		top: 0%;
+	}
+}
