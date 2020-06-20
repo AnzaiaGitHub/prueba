@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Odibee+Sans&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Piedra&display=swap');
 *{
 	margin: 0;
 	padding: 0;
@@ -7,6 +7,7 @@
 }
 
 :root{
+	/*rem*/
 	font-size: 15px;
 	/*Paleta de colores*/
 	--myYellow:rgb(255,212,4);
@@ -17,7 +18,22 @@
 	--navbar:rgb(15,82,186);
 	--myRed:rgb(255,18,0);
 }
+body{
+	background-color: var(--myBlue);
+}
 
+body::-webkit-scrollbar{
+	width: 0.5rem;
+	height: 0.5rem;
+}
+body::-webkit-scrollbar-track{
+	background-color: rgba(0,0,0,0.5);
+	border-radius: 0.5rem;
+}
+body::-webkit-scrollbar-thumb{
+	background-color: rgba(255,255,255,0.7);
+	border-radius: 0.5rem;
+}
 header{
 	width: 100vw;
 	height: auto;
@@ -35,6 +51,7 @@ header{
 	font-family: "Odibee Sans",sans-serif;
 	color: rgba(189,151,27,0.8);
 	text-shadow: 5px 5px 6px rgb(0,0,0);
+	padding-top: 40px;
 }
 
 .subtitulomayor{
@@ -105,22 +122,7 @@ header{
 	}
 /*Fin Navbar*/
 /*________________________________________________________________________________________*/
-body{
-	background-color: var(--myBlue);
-}
 
-body::-webkit-scrollbar{
-	width: 0.5rem;
-	height: 0.5rem;
-}
-body::-webkit-scrollbar-track{
-	background-color: rgba(0,0,0,0.5);
-	border-radius: 0.5rem;
-}
-body::-webkit-scrollbar-thumb{
-	background-color: rgba(255,255,255,0.7);
-	border-radius: 0.5rem;
-}
 
 /*Calendario y Lista de Eventos*/
 .contenedorgeneral{
@@ -161,38 +163,41 @@ body::-webkit-scrollbar-thumb{
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
-	width: auto;
-	margin-top: 10vh;
+	width: 80%;
+	margin-top: 5vh;
+	margin-bottom: 5vh;
 	border:1px solid black;
 	background-color: rgba(200,200,250,0.8);
 	border: none;
 	border-radius: 25px;
-	padding-bottom: 40px;
-	box-shadow: 0 0 6px black;
+	box-shadow: 0 0 10px black;
+	overflow: hidden;
 }
 
 .presentacion{
 	display: flex;
 	justify-content: space-between;
-	width: 100%;
+	width: 80%;
 	height: auto;
+	margin-top: 20px;
+	padding-bottom: 20px;
+	border-bottom: 1px solid gray;
 }
-
 .logosection{
-	width: 50%;
+	display: flex;
+	justify-content: center;
+	width: 40%;
 	height: 100%;
 }
-
 .header_logo{
-	width: 400px;
-	height: 400px;
-	margin-left: 25%;
+	width: auto;
+	height: 30vh;
 }
 
 .basico{
 	display: flex;
 	flex-direction: column;	
-	width: 50%;
+	width: auto;
 	height: auto;
 	justify-content:center;
 	padding: 15px;
@@ -205,6 +210,44 @@ body::-webkit-scrollbar-thumb{
 .basico h2{
 	font-weight: bold;
 	font-size: 2rem;
+}
+.unidades{
+	display: flex;
+	width: 80%;
+	border-bottom: 1px solid gray;
+	height: auto;
+	padding: 15px;
+}
+.unidadiv:hover{
+	opacity: .7;
+}
+.unidadiv{
+	display: flex;
+	padding-right: 10px;
+	padding-left: 10px;
+	flex-direction: column;
+	align-items: center;
+	cursor: pointer;
+}
+.unidad:hover{
+	box-shadow: none;
+}
+.unidad{
+	display: flex;
+	width: 20vh;
+	height: 20vh;
+	text-align:center;
+	align-items: center;
+	flex-direction: column;
+	border-radius: 50%;
+	box-shadow: 0 0 16px black;
+}
+.unidadiv p{
+	font-family: "Odibee Sans", sans-serif;
+	text-align: center;
+	color: white;
+	font-size: 3rem;
+	padding: 20px 0 0 0;
 }
 
 /*titulo del body de la página*/
@@ -222,6 +265,7 @@ body::-webkit-scrollbar-thumb{
 	color: rgb(52,52,52);
 	padding: 20px 35px;
 	width: 80%;
+	border-bottom: 1px solid gray;
 }
 /*títulos en la  historia*/
 .historia h2{
@@ -245,11 +289,58 @@ body::-webkit-scrollbar-thumb{
 	text-align: justify;
 	margin-top: 20px;
 }
-
-.imagen{
-	height: 40vh;
-	width: auto;
+ol li{
+	font-weight: bold;
+	font-size: 1.25rem;
 }
+
+.patronoracion{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-weight: bold;
+	font-size: 1.4rem;
+	text-align:center;
+	padding: 20px 0;
+	width: 80%;
+}
+.patrono{
+	width: 40%;
+	overflow: hidden;
+	text-align:center;
+	padding: 0 8% 0 8%;
+}
+.patronoimg{
+	width: 100%;
+	height: auto;
+	border-radius: 15px;
+}
+.oracion{
+	width: 50%;
+}
+.oracion h2{
+	padding-bottom: 20px;
+}
+.oracion p{
+	text-align: center;
+}
+
+.himno{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-weight: bold;
+	font-size: 1.4rem;
+	text-align:center;
+	padding: 20px 0;
+	width: 100%;
+	font-family: "Piedra",sans-serif;
+	color: rgb(50,20,20);
+	background-image: url("../img/pergaminohimno.jpg");
+	background-size: cover;
+	border-radius: 15px;
+}
+
 .button{
 	border: none;
 	border-radius: 5px;
