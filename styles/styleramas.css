@@ -97,6 +97,7 @@
 	border-bottom: 1px solid gray;
 	height: auto;
 	padding: 15px;
+	flex-wrap: wrap;
 }
 .unidadiv:hover{
 	opacity: .7;
