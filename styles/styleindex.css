@@ -56,6 +56,7 @@ header{
 	width: auto;
 	margin-top: 10vh;
 	border:1px solid black;
+	margin-bottom: 5vh;
 }
 
 /*titulo del body de la página*/
@@ -65,6 +66,7 @@ header{
 	color: white;
 	font-size: 6rem;
 	padding: 10px 0;
+	margin-top: 50px;
 }
 
 /*Lista de eventos*/
@@ -92,6 +94,7 @@ header{
 	font-size: 1.25rem;
 	text-align: justify;
 	color: rgb(52,52,52);
+	width: 100%;
 }
 
 .eventext h2{
@@ -121,6 +124,11 @@ header{
 	font-weight: bold;
 	cursor: pointer;
 	margin: 15px;
+	transition: .4s;
+}
+.button:hover{
+	box-shadow: none;
+	font-size: 1.3rem;
 }
 
 .modal{
@@ -141,6 +149,7 @@ header{
 .modalcontent{
 	width: 80%;
 	text-align: justify;
+	margin-left: 10%;
 }
 
 .cm{
@@ -160,6 +169,19 @@ header{
 	color: rgba(200,0,0,1);
 	font-size: 2.2rem;
 }
+.om{
+	font-family: "Arial",sans-serif;
+	font-size: 1.2rem;
+	font-weight: bold;
+	padding-bottom: 5px;
+	border: none;
+	cursor: pointer;
+}
+.om:hover{
+	color: rgba(0,0,0,.6);
+}
+
+
 dialog::-webkit-scrollbar{
 	width: 0.5rem;
 	overflow: hidden;

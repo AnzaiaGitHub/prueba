@@ -182,7 +182,7 @@ ol li{
 
 .patronoracion{
 	display: flex;
-	justify-content: center;
+	justify-content: space-between;
 	align-items: center;
 	font-weight: bold;
 	font-size: 1.4rem;
@@ -225,6 +225,7 @@ ol li{
 	background-image: url("../img/pergaminohimno.jpg");
 	background-size: cover;
 	border-radius: 15px;
+	/*flex-wrap: wrap;*/
 }
 
 .button{
