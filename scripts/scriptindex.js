@@ -21,14 +21,14 @@ const	cmodal4=document.getElementById('cmodal4');
 /*const	cmodal5=document.getElementById('cmodal5');*/
 
 omodal1.addEventListener('click',()=>{
-	modal1.setAttribute('open','true')
+	modal1.setAttribute('open','true');
 	modaler(0);
 	// document.getElementById("contenedorgeneral").style.opacity=0.5;
 	// document.getElementById("modal1").style.opacity=1;
 
 })
 omodal2.addEventListener('click',()=>{
-	modal2.setAttribute('open','true')
+	modal2.setAttribute('open','true');
 	modaler(0);
 	// document.getElementById("contenedorgeneral").style.opacity=0.5;
 	// document.getElementById("modal1").style.opacity=1;
@@ -44,12 +44,12 @@ omodal4.addEventListener('click',()=>{
 	modal5.setAttribute('open','true')
 })*/
 cmodal1.addEventListener('click',()=>{
-	modal1.removeAttribute('open')
+	modal1.removeAttribute('open');
 	modaler(1);
 	// document.getElementById("contenedorgeneral").style.opacity=1;
 })
 cmodal2.addEventListener('click',()=>{
-	modal2.removeAttribute('open')
+	modal2.removeAttribute('open');
 	modaler(1);
 	// document.getElementById("contenedorgeneral").style.opacity=1;
 })
