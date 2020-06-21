@@ -5,6 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="Página Oficial de pruebas del Grupo Scout Halcones 371.">
 	<link rel="stylesheet" type="text/css" href="../styles/styleramas.css">
+	<link rel="stylesheet" type="text/css" href="../styles/stylegeneral.css">
 	<link rel="icon" type="image/png" href="../img/LogoTropa.png">
 	<title>Tropa Macagua</title>
 </head>
@@ -49,7 +50,9 @@
 				</div>
 			</div>
 			<div class="verticalcontainer">
-				<h1 class="titulomayor">Tropa de Scouts Macagua</h1>
+				<div class="switcher">
+					<span><button class="cambio" onclick="window.location='./aldea.html'">Aldea</button></span><span><h1 class="titulomayor">Tropa de Scouts Macagua</h1></span><span><button class="cambio" onclick="window.location='./clan.html'">Clan</button></span>
+				</div>
 				<h2 class="subtitulomayor">¡Guardianes del horizonte!</h2>
 				<div class="presentacion">
 					<div class="logosection">
@@ -64,27 +67,27 @@
 				</div>
 				<h2 class="title">Patrullas</h2>
 				<div class="unidades">
-					<div class="unidadiv" onclick="unidades(21)">
+					<div class="unidadiv" onclick="unidades(31)">
 						<div class="unidad" style="background-image: url('../img/puma.jpg'); background-size: 110%; background-position: -15px 0px;">
 						</div>
 						<p>Pumas</p>
 					</div>
-					<div class="unidadiv" onclick="unidades(22)">
+					<div class="unidadiv" onclick="unidades(32)">
 						<div class="unidad" style="background-image: url('../img/tigre.jpg'); background-size:90%; background-position: 10px;">
 						</div>
 						<p>Tibery</p>
 					</div>
-					<div class="unidadiv" onclick="unidades(23)">
+					<div class="unidadiv" onclick="unidades(33)">
 						<div class="unidad" style="background-image: url('../img/gacela.jpg'); background-size: 150%; background-position: -40px -145px">
 						</div>
 						<p>Gacelas</p>
 					</div>
-					<div class="unidadiv" onclick="unidades(23)">
+					<div class="unidadiv" onclick="unidades(0)"><!-- unidades(34) -->
 						<div class="unidad" style="background-image: url('../img/centauro.jpg'); background-size: 125%; background-position: -22px -4px;">
 						</div>
 						<p>Centauros</p>
 					</div>
-					<div class="unidadiv" onclick="unidades(23)">
+					<div class="unidadiv" onclick="unidades(35)">
 						<div class="unidad" style="background-image: url('../img/lobogris.jpg'); background-size: 125%; background-position: -12px -5px;">
 						</div>
 						<p>Lobos</p>

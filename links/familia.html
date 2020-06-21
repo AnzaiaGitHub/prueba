@@ -5,6 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="Página Oficial de pruebas del Grupo Scout Halcones 371.">
 	<link rel="stylesheet" type="text/css" href="../styles/styleramas.css">
+	<link rel="stylesheet" type="text/css" href="../styles/stylegeneral.css">
 	<link rel="icon" type="image/png" href="../img/LogoFamilia.png">
 	<title>Familia Soro</title>
 </head>
@@ -49,7 +50,9 @@
 				</div>
 			</div>
 			<div class="verticalcontainer">
-				<p class="titulomayor">Familia de Cachorros Soro</p>
+				<div class="switcher">
+					<span><h1 class="titulomayor">Familia de Cachorros Soro</h1></span><span><button class="cambio" onclick="window.location='./manada.html'">Manada</button></span>
+				</div>
 				<p class="subtitulomayor">¡Tras la huella de un sueño!</p>
 				<div class="presentacion">
 					<div class="logosection">
@@ -64,20 +67,20 @@
 				</div>
 				<h2 class="title">Camadas</h2>
 				<div class="unidades">
-					<div class="unidadiv" onclick="unidades(1)">
-						<div class="unidad" style="background-image: url('../img/conejito.jpg'); background-size: cover; background-position: 0px;">
+					<div class="unidadiv" onclick="unidades(0)"><!-- unidades(1) -->
+						<div class="unidad" style="background-image: url('../img/osito.jpg'); background-size: cover; background-position: 0px;">
 						</div>
-						<p>Conejitos</p>
+						<p>Ositos</p>
 					</div>
-					<div class="unidadiv" onclick="unidades(2)">
+					<div class="unidadiv" onclick="unidades(0)"><!-- unidades(2) -->
 						<div class="unidad" style="background-image: url('../img/gatito.jpg'); background-size: cover; background-position: 0px;">
 						</div>
 						<p>Gatitos</p>
 					</div>
-					<div class="unidadiv" onclick="unidades(3)">
-						<div class="unidad" style="background-image: url('../img/ardillita.jpg'); background-size: cover; background-position: 5px;">
+					<div class="unidadiv" onclick="unidades(0)"><!-- unidades(3) -->
+						<div class="unidad" style="background-image: url('../img/conejito.jpg'); background-size: cover; background-position: 5px;">
 						</div>
-						<p>Ardillitas</p>
+						<p>Conejitos</p>
 					</div>
 				</div>
 				<div class="historia">
