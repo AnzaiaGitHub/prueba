@@ -126,42 +126,40 @@ header{
 .modal{
 	width: 60%;
 	height: 80%;
-	text-align: justify;
 	left: 20%;
 	top:10%;
 	padding: 30px 20px;
 	overflow: hidden;
-	border: none;
 	overflow-y: auto;
+	border: none;
 	background-color: rgba(200,200,250,1);
-	z-index: 10;
 	position: fixed;
 	border-radius: 20px;
+	justify-content: center;
+}
+
+.modalcontent{
+	width: 80%;
+	text-align: justify;
 }
 
 .cm{
 	position: fixed;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	width: 40px;
-	height: 40px;
+	top:12%;
 	right: 22%;
-	top: 4%;
-	font-family: "Roland",sans-serif;
-	font-size: 35px;
+	font-family: "Arial",sans-serif;
+	font-size: 2rem;
+	font-weight: bold;
 	padding-bottom: 5px;
 	border: none;
-	border-radius: 25%;
 	color: rgba(50,50,50,0.8);
-	background-color: rgba(200,200,250,1);
 	cursor: pointer;
+	background-color: rgba(0,0,0,0);
 }
 .cm:hover {
-	color: rgba(0,0,0,1);
-	font-size: 45px;
+	color: rgba(200,0,0,1);
+	font-size: 2.2rem;
 }
-
 dialog::-webkit-scrollbar{
 	width: 0.5rem;
 	overflow: hidden;
