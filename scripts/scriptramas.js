@@ -26,13 +26,13 @@ function animate(){
 function unidades(unidad){
 	switch(unidad){
 		case 1:
-		window.location="./conejitos.html";
+		window.location="./ositos.html";
 		break;
 		case 2:
 		window.location="./gatitos.html";
 		break;
 		case 3:
-		window.location="./ardillitas.html";
+		window.location="./conejitos.html";
 		break;
 
 		case 11:
@@ -45,7 +45,7 @@ function unidades(unidad){
 		window.location="./cafe.html";
 		break;
 		case 14:
-		window.location="./roja.html";
+		window.location="./amarilla.html";
 		break;
 		case 15:
 		window.location="./negra.html";
@@ -75,6 +75,9 @@ function unidades(unidad){
 		break;
 		case 35:
 		window.location="./lobos.html";
+		break;
+		default:
+			alert("La página solicitada no cuenta con la información necesaria para estar activa.");
 		break;
 	}
 }
