@@ -130,20 +130,19 @@ header{
 	box-shadow: none;
 	font-size: 1.3rem;
 }
-
 .modal{
 	width: 60%;
 	height: 80%;
 	left: 20%;
 	top:10%;
 	padding: 30px 20px;
-	overflow: hidden;
 	overflow-y: auto;
 	border: none;
 	background-color: rgba(200,200,250,1);
 	position: fixed;
 	border-radius: 20px;
 	justify-content: center;
+	display: none;
 }
 
 .modalcontent{
@@ -182,15 +181,14 @@ header{
 }
 
 
-dialog::-webkit-scrollbar{
+.modal::-webkit-scrollbar{
 	width: 0.5rem;
-	overflow: hidden;
 }
-dialog::-webkit-scrollbar-track{
+.modal::-webkit-scrollbar-track{
 	background-color: rgba(255,255,255,0.5);
 	border-radius: 0.5rem;
 }
-dialog::-webkit-scrollbar-thumb{
+.modal::-webkit-scrollbar-thumb{
 	background-color: rgba(0,0,0,0.7);
 	border-radius: 0.5rem;
 }
