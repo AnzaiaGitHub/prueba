@@ -1,0 +1,351 @@
+@import url('https://fonts.googleapis.com/css2?family=Odibee+Sans&display=swap');
+
+header{
+	width: 100vw;
+	height: 800px;
+	background: #bc4e9c;
+	background: -webkit-linear-gradient(to bottom, rgba(115,194,251,0.8),rgba(65,144,200,0.6)),URL("../img/jamboree.jpeg");
+	background: linear-gradient(to bottom, rgba(115,194,251,0.8),rgba(65,144,200,0.6)),URL("../img/jamboree.jpeg");
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	position: relative;
+}
+
+.logosection{
+	display: flex;
+	height: auto;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	text-align: center;
+}
+
+.header_logo{
+	margin-top: 5%;
+	width: 300px;
+	height: auto;
+}
+
+.wave{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	fill: var(--myBlue);
+}
+
+
+/*________________________________________________________________________________________*/
+
+/*Calendario y Lista de Eventos*/
+.contenedorgeneral{
+	display: flex;
+	justify-content: space-between;
+	width: 90vw;
+	margin-left: 5vw;
+	margin-top: 10vh;
+	border:1px solid black;
+	overflow: hidden;
+}
+
+.verticalcontainer{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	width: auto;
+	margin-top: 10vh;
+	border:1px solid black;
+	background-color: rgba(200,200,250,0.8);
+	border: none;
+	border-radius: 25px;
+	padding-bottom: 40px;
+	box-shadow: 0 0 6px black;
+}
+
+/*titulo del body de la página*/
+.title{
+	font-family: "Odibee Sans",sans-serif;
+	color: white;
+	font-size: 6rem;
+	font-weight: bold;
+	padding: 10px 0;
+}
+
+/*Parrafos de la historia*/
+.historia{
+	font-family: "Tenali Ramakrishna",sans-serif;
+	color: rgb(52,52,52);
+	padding: 20px 35px;
+	width: 80%;
+}
+/*títulos en la  historia*/
+.historia h2{
+	font-family: "Odibee Sans", sans-serif;
+	text-align: center;
+	color: white;
+	font-size: 3rem;
+	padding: 20px 0 0 0;
+}
+/*subtítulos en la  historia*/
+.historia h3{
+	font-family: "Odibee Sans", sans-serif;
+	font-size: 2rem;
+	padding: 20px 0 0 0;
+}
+
+/*Párrafos en la historia*/
+.historia p{
+	font-weight: bold;
+	font-size: 1.4rem;
+	text-align: justify;
+	margin-top: 20px;
+}
+
+.frase{
+	background-color: rgba(255,255,255,.2);
+	font-weight: bold;
+	font-size: 1.4rem;
+	text-align: justify;
+	margin-top: 20px;
+	width: 80%;
+	padding: 15px;
+}
+
+.imagen{
+	height: 40vh;
+	width: auto;
+}
+
+.button{
+	border: none;
+	border-radius: 5px;
+	font-size: 1rem;
+	padding: 5px;
+	background-color: var(--myDarkBeige);
+	box-shadow: 0 2px 6px black;
+	font-weight: bold;
+	cursor: pointer;
+	margin: 15px;
+}
+
+
+/*el responsive*/
+@media only screen and (max-width: 600px){
+	nav {
+		display: flex;
+		justify-content: space-between;
+		width: 100vw;
+	}
+
+	nav ul{
+		list-style: none;
+		padding: 0;
+	}
+	nav li{
+		line-height: 2.7rem;
+		position: relative;
+		border-left: 0.2px solid black;
+	}
+	nav li ul{position: absolute;}
+	nav a{
+		text-decoration: none;
+		color:rgb(0,0,0);
+		background-color: rgba(255,255,255,0.6);
+		font-weight: bold;
+		border-radius: 5px 5px 0 0;
+		font-size: 0.8rem;
+		font-family: "Tenali Ramakrishna",sans-serif;
+		display: flex;
+		padding: 0 1.7rem;
+		filter: grayscale(0%) opacity(0.7);
+		transition: .3s;
+	}
+	nav a:hover{
+		background-color: var(--myDarkBeige);
+	}
+	nav > ul{
+		background-color: var(--myBeige);
+		display: table;
+		width: 100%;
+	}
+	nav > ul > li{float: right;}
+	nav li:click >ul> li{
+		max-height: 500px;
+		overflow: visible;
+		border-bottom: 0.2px solid black;
+	}
+
+	/*Estilos 2nd level from Nav*/
+
+	nav li li{
+		background-color: var(--myDarkBeige);
+		width: auto;
+		transition: all .5s;
+		max-height: 0;
+		overflow: hidden;
+	}
+	nav > ul > li > ul{top: 100%;}
+
+	/*Estilos 3rd level from nav*/
+
+	nav > ul > li > ul > li > ul{
+		right: 100%;
+		top: 0%;
+	}
+
+	header{
+		width: 100vw;
+		height: 600px;
+		background: #bc4e9c;
+		background: -webkit-linear-gradient(to right, rgba(115,194,251,0.46),rgba(65,144,200,0.46)),URL("../img/FondoHalcones.jpg");
+		background: linear-gradient(to right, rgba(115,194,251,0.46),rgba(65,144,200,0.46)),URL("../img/FondoHalcones.jpg");
+		background-position: 0 -50px;
+		background-attachment: fixed;
+		position: relative;
+	}
+
+	.logosection{
+		display: flex;
+		height: auto;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+		text-align: center;
+	}
+
+	.header_logo{
+		margin-top: 5%;
+		width: 200px;
+		height: 200px;
+	}
+
+	.titulomayor{
+		font-size: 3rem;
+		font-family: "Odibee Sans",sans-serif;
+		color: rgba(189,151,27,0.8);
+		text-shadow: 5px 5px 6px rgb(0,0,0);
+	}
+
+	.subtitulomayor{
+		font-size: 1.5rem;
+		font-family: "Odibee Sans",sans-serif;
+		color: rgba(0,0,55,1);
+	}
+
+	.wave{
+		position: absolute;
+		bottom: 0;
+		width: 100%;
+		fill: var(--myBlue);
+	}
+}
+
+@media only screen and (max-width: 430px){
+	nav {
+		display: flex;
+		justify-content: space-between;
+		width: 100vw;
+	}
+
+	nav ul{
+		list-style: none;
+		padding: 0;
+	}
+	nav li{
+		line-height: 2.7rem;
+		position: relative;
+		border-left: 0.2px solid black;
+	}
+	nav li ul{position: absolute;}
+	nav a{
+		text-decoration: none;
+		color:rgb(0,0,0);
+		background-color: rgba(255,255,255,0.6);
+		font-weight: bold;
+		border-radius: 5px 5px 0 0;
+		font-size: 0.7rem;
+		font-family: "Tenali Ramakrishna",sans-serif;
+		display: flex;
+		padding: 0 1.5rem;
+		transition: .3s;
+	}
+	nav a:hover{
+		background-color: var(--myDarkBeige)
+	}
+	nav > ul{
+		background-color: var(--myBeige);
+		display: table;
+		width: 100%;
+	}
+	nav > ul > li{float: right;}
+	nav li:click >ul> li{
+		max-height: 500px;
+		overflow: visible;
+		border-bottom: 0.2px solid black;
+		background-color: var(--myDarkBeige);
+	}
+
+	/*Estilos 2nd level from Nav*/
+
+	nav li li{
+		background-color: var(--myBeige);
+		width: auto;
+		transition: all .5s;
+		max-height: 0;
+		overflow: hidden;
+	}
+	nav > ul > li > ul{top: 100%;}
+
+	/*Estilos 3rd level from nav*/
+
+	nav > ul > li > ul > li > ul{
+		right: 100%;
+		top: 0%;
+	}
+
+	header{
+		width: 100vw;
+		height: 520px;
+		background: -webkit-linear-gradient(to right, rgba(115,194,251,0.46),rgba(65,144,200,0.46)),URL("../img/FondoHalcones.jpg");
+		background: linear-gradient(to right, rgba(115,194,251,0.46),rgba(65,144,200,0.46)),URL("../img/FondoHalcones.jpg");
+		background-position: 0 -50px;
+		background-attachment: fixed;
+		position: relative;
+	}
+
+	.logosection{
+		display: flex;
+		height: auto;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+		text-align: center;
+	}
+
+	.header_logo{
+		margin-top: 5%;
+		width: 160px;
+		height: 160px;
+	}
+
+	.titulomayor{
+		font-size: 2rem;
+		font-family: "Odibee Sans",sans-serif;
+		color: rgba(189,151,27,0.8);
+		text-shadow: 5px 5px 6px rgb(0,0,0);
+	}
+
+	.subtitulomayor{
+		font-size: 1rem;
+		font-family: "Odibee Sans",sans-serif;
+		color: rgba(0,0,55,1);
+	}
+
+	.wave{
+		position: absolute;
+		bottom: 0;
+		width: 100%;
+		fill: var(--myBlue);
+	}
+}
