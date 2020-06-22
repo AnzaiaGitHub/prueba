@@ -10,23 +10,23 @@ const botonsubir = document.getElementById('scrolltop');
 function om(modalo){
 	switch(modalo){
 		case 1:
-			modal1.setAttribute('open','true');
+			modal1.style.display='block';
 			modaler(0);		
 		break;
 		case 2:
-			modal2.setAttribute('open','true');
-			modaler(0);		
+			modal2.style.display='block';
+			modaler(0);	
 		break;
 	}
 }
 function cm(modalc) {
 	switch(modalc){
 		case 1:
-			modal1.removeAttribute('open');
+			modal1.style.display='none';
 			modaler(1);	
 		break;
 		case 2:
-			modal2.removeAttribute('open');
+			modal2.style.display='none';
 			modaler(2);	
 		break;
 	}
