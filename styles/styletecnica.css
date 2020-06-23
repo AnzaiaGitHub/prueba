@@ -1,43 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Odibee+Sans&display=swap');
-
-header{
-	width: 100vw;
-	height: 800px;
-	background: #bc4e9c;
-	background: -webkit-linear-gradient(to bottom, rgba(115,194,251,0.5),rgba(65,144,200,0.46)),URL("../img/scoutingforboys.png");
-	background: linear-gradient(to bottom, rgba(115,194,251,0.5),rgba(65,144,200,0.46)),URL("../img/scoutingforboys.png");
-	background-size: cover;
-	background-attachment: fixed;
-	background-repeat: no-repeat;
-	position: relative;
-}
-
-.logosection{
-	display: flex;
-	height: auto;
-	align-items: center;
-	justify-content: center;
-	flex-direction: column;
-	text-align: center;
-}
-
-.header_logo{
-	margin-top: 5%;
-	width: 300px;
-	height: 300px;
-}
-
-.wave{
-	position: absolute;
-	bottom: 0;
-	width: 100%;
-	fill: var(--myBlue);
-}
-
+@import url('https://fonts.googleapis.com/css2?family=Piedra&display=swap');
 
 /*________________________________________________________________________________________*/
 
-/*Calendario y Lista de Eventos*/
 .contenedorgeneral{
 	display: flex;
 	justify-content: space-between;
@@ -46,7 +11,6 @@ header{
 	margin-top: 10vh;
 	border:1px solid black;
 	overflow: hidden;
-	padding-bottom: 40px;
 }
 
 .verticalcontainer{
@@ -54,13 +18,26 @@ header{
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
-	width: auto;
-	margin-top: 10vh;
+	width: 80%;
+	margin-top: 5vh;
+	margin-bottom: 5vh;
 	border:1px solid black;
 	background-color: rgba(200,200,250,0.8);
 	border: none;
 	border-radius: 25px;
-	box-shadow: 0 0 6px black;
+	box-shadow: 0 0 10px black;
+	overflow: hidden;
+	padding-bottom: 30px;
+}
+
+.presentacion{
+	display: flex;
+	justify-content: space-between;
+	width: 80%;
+	height: auto;
+	margin-top: 20px;
+	padding-bottom: 20px;
+	border-bottom: 1px solid gray;
 }
 
 /*titulo del body de la página*/
@@ -71,33 +48,6 @@ header{
 	font-weight: bold;
 	padding: 10px 0;
 }
-
-/*Indice*/
-.indice{
-	display: inline-block;
-	background-color: rgba(255,255,255,0.5);
-	padding: 15px 15px;
-	border-radius: 15px;
-	width: 15rem;
-	margin-left: 15px;
-}
-
-.indice ul{
-	list-style-type: none;
-}
-.indice ul li{
-	padding-bottom: 8px;
-}
-.indice a{
-	color:rgba(100,10,10,1);
-	font-weight: bold;
-}
-.indice a:hover{
-	color:rgba(250,10,10,.8);
-	font-weight: bold;
-}
-
-
 
 /*Parrafos de la historia*/
 .historia{
@@ -129,43 +79,44 @@ header{
 	text-align: justify;
 	margin-top: 20px;
 }
-/*Hipervínculos en la historia*/
-.historia a{
-	color: black;
-}
-.historia a:hover{
-	color: rgba(255,255,255,.6);
-}
-.frase{
-	background-color: rgba(255,255,255,.2);
+ol li{
 	font-weight: bold;
-	font-size: 1.4rem;
-	text-align: justify;
-	margin-top: 20px;
-	width: 80%;
-	padding: 15px;
-}
-summary{
-	cursor: pointer;
-	font-weight: bold;
-	font-size: 1.4rem;
-	text-decoration: underline;
-	color: var(--myBlue);
-	transition: .4s;
-	padding: 10px;
-}
-summary:hover{
-	font-size: 1.5rem;	
-}
-.img{
-	padding: 20px;
-	text-align: center;
-}
-.imagen{
-	height: 40vh;
-	width: auto;
+	font-size: 1.25rem;
 }
 
+.nudodescripcion{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-weight: bold;
+	font-size: 1.4rem;
+	text-align:center;
+	padding: 40px 0;
+	width: 80%;
+	border-bottom: 1px solid gray;
+}
+.video{
+	width:220px;
+	height:120px
+}
+.nudoimg{
+	width: 30%;
+	height: auto;
+	border-radius: 15px;
+}
+.descripcion{
+	width:30%;
+}
+.descripcion h2{
+	font-family: "Odibee Sans", sans-serif;
+	text-align: center;
+	color: white;
+	font-size: 3rem;
+	padding-bottom: 20px;
+}
+.descripcion p{
+	text-align: justify;
+}
 .button{
 	border: none;
 	border-radius: 5px;
@@ -177,7 +128,6 @@ summary:hover{
 	cursor: pointer;
 	margin: 15px;
 }
-
 
 /*el responsive*/
 @media only screen and (max-width: 600px){
@@ -241,53 +191,6 @@ summary:hover{
 	nav > ul > li > ul > li > ul{
 		right: 100%;
 		top: 0%;
-	}
-
-	header{
-		width: 100vw;
-		height: 600px;
-		background: #bc4e9c;
-		background: -webkit-linear-gradient(to right, rgba(115,194,251,0.46),rgba(65,144,200,0.46)),URL("../img/FondoHalcones.jpg");
-		background: linear-gradient(to right, rgba(115,194,251,0.46),rgba(65,144,200,0.46)),URL("../img/FondoHalcones.jpg");
-		background-position: 0 -50px;
-		background-attachment: fixed;
-		position: relative;
-	}
-
-	.logosection{
-		display: flex;
-		height: auto;
-		align-items: center;
-		justify-content: center;
-		flex-direction: column;
-		text-align: center;
-	}
-
-	.header_logo{
-		margin-top: 5%;
-		width: 200px;
-		height: 200px;
-	}
-
-	.titulomayor{
-		font-size: 3rem;
-		font-family: "Odibee Sans",sans-serif;
-		color: rgba(189,151,27,0.8);
-		text-shadow: 5px 5px 6px rgb(0,0,0);
-	}
-
-	.subtitulomayor{
-		font-size: 1.5rem;
-		font-family: "Odibee Sans",sans-serif;
-		color: rgba(0,0,55,1);
-	}
-
-	.wave{
-		position: absolute;
-		bottom: 0;
-		width: 100%;
-		fill: var(--myBlue);
-	}
 }
 
 @media only screen and (max-width: 430px){
@@ -351,50 +254,5 @@ summary:hover{
 	nav > ul > li > ul > li > ul{
 		right: 100%;
 		top: 0%;
-	}
-
-	header{
-		width: 100vw;
-		height: 520px;
-		background: -webkit-linear-gradient(to right, rgba(115,194,251,0.46),rgba(65,144,200,0.46)),URL("../img/FondoHalcones.jpg");
-		background: linear-gradient(to right, rgba(115,194,251,0.46),rgba(65,144,200,0.46)),URL("../img/FondoHalcones.jpg");
-		background-position: 0 -50px;
-		background-attachment: fixed;
-		position: relative;
-	}
-
-	.logosection{
-		display: flex;
-		height: auto;
-		align-items: center;
-		justify-content: center;
-		flex-direction: column;
-		text-align: center;
-	}
-
-	.header_logo{
-		margin-top: 5%;
-		width: 160px;
-		height: 160px;
-	}
-
-	.titulomayor{
-		font-size: 2rem;
-		font-family: "Odibee Sans",sans-serif;
-		color: rgba(189,151,27,0.8);
-		text-shadow: 5px 5px 6px rgb(0,0,0);
-	}
-
-	.subtitulomayor{
-		font-size: 1rem;
-		font-family: "Odibee Sans",sans-serif;
-		color: rgba(0,0,55,1);
-	}
-
-	.wave{
-		position: absolute;
-		bottom: 0;
-		width: 100%;
-		fill: var(--myBlue);
 	}
 }

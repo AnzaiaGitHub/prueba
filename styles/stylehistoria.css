@@ -46,6 +46,7 @@ header{
 	margin-top: 10vh;
 	border:1px solid black;
 	overflow: hidden;
+	padding-bottom: 40px;
 }
 
 .verticalcontainer{
@@ -59,7 +60,6 @@ header{
 	background-color: rgba(200,200,250,0.8);
 	border: none;
 	border-radius: 25px;
-	padding-bottom: 40px;
 	box-shadow: 0 0 6px black;
 }
 
