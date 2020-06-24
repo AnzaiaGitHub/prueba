@@ -102,6 +102,7 @@ body::-webkit-scrollbar-thumb{
 		align-content: center;
 		height: auto;
 		padding: 10px;
+		overflow:hidden;
 	}
 
 	.flor{

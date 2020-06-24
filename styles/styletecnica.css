@@ -9,7 +9,7 @@
 	width: 90vw;
 	margin-left: 5vw;
 	margin-top: 10vh;
-	border:1px solid black;
+	flex-direction: row;
 	overflow: hidden;
 }
 
@@ -48,6 +48,43 @@
 	font-weight: bold;
 	padding: 10px 0;
 }
+.division{
+	padding-left: 14px;
+	width: 50%;
+	border-left: 1px solid gray;
+}
+/*Indice*/
+.indice{
+	display: flex;
+	justify-content: space-between;
+	background-color: rgba(255,255,255,0.5);
+	padding: 15px 15px;
+	border-radius: 15px;
+	width: 80%;
+	margin-left: 15px;
+	flex-wrap: wrap;
+}
+
+.indice ul{
+	padding: 10px;
+}
+.indice >ul> li{
+	padding-bottom: 8px;
+}
+.indice a{
+	color:rgba(100,10,10,1);
+	font-weight: bold;
+}
+.indice a:hover{
+	color:rgba(250,10,10,.8);
+	font-weight: bold;
+}
+.indice li ul{
+	padding-left: 15px;
+}
+.indice li li{
+	padding-bottom: 4px;	
+}
 
 /*Parrafos de la historia*/
 .historia{
@@ -71,7 +108,12 @@
 	font-size: 2rem;
 	padding: 20px 0 0 0;
 }
-
+.historia h4{
+	font-family: "Odibee Sans", serif;
+	font-size: 1.8rem;
+	padding: 20px 0 0 0;
+	font-style: oblique;
+}
 /*Párrafos en la historia*/
 .historia p{
 	font-weight: bold;
@@ -84,6 +126,37 @@ ol li{
 	font-size: 1.25rem;
 }
 
+summary{
+	cursor: pointer;
+	font-weight: bold;
+	font-size: 1.4rem;
+	text-decoration: underline;
+	color: var(--myBlue);
+	transition: .4s;
+	padding: 10px;
+}
+summary:hover{
+	font-size: 1.5rem;	
+}
+table{
+	background-color: rgba(255,255,255,.6);
+	border-collapse: collapse;
+}
+.alturas{
+	padding-top: 20px;
+}
+.th>td{
+	background-color: rgba(55,55,55,.8);
+	padding: 5px 15px;
+	color:white;
+	font-weight: bold;
+}
+tr>td{
+	padding: 5px 15px;
+	border:1px solid gray;
+}
+
+
 .nudodescripcion{
 	display: flex;
 	justify-content: space-between;
@@ -95,23 +168,67 @@ ol li{
 	width: 80%;
 	border-bottom: 1px solid gray;
 }
+.amarredescripcion{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-weight: bold;
+	font-size: 1.4rem;
+	text-align:center;
+	padding: 40px;
+	width: 80%;
+	overflow: hidden;
+}
 .video{
 	width:220px;
-	height:120px
+	height:120px;
+}
+.video2{
+	display: flex;
+	justify-content: center;
+	width: 80%;
+	padding: 25px;
+	border-bottom: 1px solid gray;
+}
+.video2 >.video2{
+	width:640px;
+	height:360px;
+	border:none;
 }
 .nudoimg{
 	width: 30%;
 	height: auto;
 	border-radius: 15px;
 }
-.descripcion{
-	width:30%;
+.amarreimg{
+	width: 45%;
+	height: auto;
 }
+.amarreimg img{
+	width: 100%;
+	height: 100%;
+}
+
+.amarredescripcion .descripcion{
+	width:45%;
+}
+
+.descripcion{
+	width:40%;
+}
+
 .descripcion h2{
 	font-family: "Odibee Sans", sans-serif;
 	text-align: center;
 	color: white;
 	font-size: 3rem;
+	padding-bottom: 20px;
+}
+.descripcion h3{
+	font-family: "Odibee Sans", sans-serif;
+	text-align: center;
+	color: white;
+	font-size: 2.2rem;
 	padding-bottom: 20px;
 }
 .descripcion p{
